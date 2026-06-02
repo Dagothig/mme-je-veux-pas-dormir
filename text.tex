@@ -1,40 +1,115 @@
 \documentclass[12pt]{book}
 \usepackage{tikz}
-\usepackage[paperwidth=12cm, paperheight=12cm, vmargin=0cm]{geometry}
-\setlength{\parindent}{0cm}
+\usepackage[paperwidth=5.5in, paperheight=5in, hmargin=0.5in, vmargin=0in]{geometry}
+\usepackage{layout}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{setspace}
+\usepackage{tgadventor}
+\renewcommand*\familydefault{\sfdefault}
+\usepackage[T1]{fontenc}
+\setlength{\parindent}{0pt}
 \setlength{\parskip}{12pt}
-\renewcommand{\familydefault}{cmss}
+\definecolor{orange}{rgb}{0.75, 0.5, 0.25}
 
 \newcommand{\imgpage}[1]{
-    \newpage
     \tikz[remember picture,overlay]
-    \node[inner sep=0pt] at (current page.center){
-    \includegraphics[width=12cm,height=12cm]{#1}
-    };
+    \node[inner sep=0pt] at (current page.center){\includegraphics[width=5.5in,height=5in]{#1}};
+    \newpage
+}
+\newcommand{\txtpage}[1]{
+    \hspace{0pt}\vfill
+    {#1}
+    \hspace{0pt}\vfill
     \newpage
 }
 
 \title{Madame Je-Veux-Pas-Dormir}
 \author{Guillaume Noël-Martel}
 \date{\today}
-
+\raggedright
+\pagenumbering{gobble}
 \begin{document}
 \large
-\pagenumbering{gobble}
 
-\hspace{0pt}\vfill
+%1ère de couverture
+\begin{tikzpicture}[remember picture,overlay]
+\node[xshift=0.125in, yshift=-0.25in](img) at (current page.center){\includegraphics[width=4.5in,height=4in]{img/cover.jpg}};
+\fill[orange] (current page.north west) -- +(0.25in, 0.0in) -- +(0.25in, -\paperheight) -- (current page.south west);
+\node[xshift=0.25in-5pt, yshift=0.125in, rotate=90, right] at (current page.south west){\textcolor{white}{MONSIEUR \textbf{MADAME}\hspace{1.575in}\textbf{DAGOTHIG}}};
+\node[xshift=0.125in, yshift=-9pt-0.25in](name) at (current page.north){
+    \textcolor{orange}{
+        \huge
+        \textbf{M}ME. \textbf{JE-VEUX-PAS-DORMIR}
+    }
+};
+\node[text width=40pt, xshift=-40pt, yshift=0.25in](jeunesse) at (current page.south east){
+    \fontsize{8pt}{8pt}\selectfont JEUNESSE
+};
+\node[text width=40pt, above of=jeunesse, yshift=-18pt](diroum){
+    \fontsize{14pt}{14pt}\selectfont diroum
+};
+\end{tikzpicture}
+\newpage
 
+%page blanche
+\hspace{0pt}
+\newpage
+
+%page blance
+\hspace{0pt}
+\newpage
+
+%collection + légal
+\hspace{0pt}
+{\center
+    Collection DIROUM
+    \begin{multicols}{2}
+    {\scriptsize
+        \begin{enumerate}[nosep]
+            \item MADAME JE-VEUX-PAS-DORMIR
+            \item MADAME GOBELIN
+            \item MADAME NATA
+            \columnbreak
+            \item MONSIEUR JE-SUIS-PAS-FATIGUÉ
+            \item MONSIEUR BABA
+            \item MONSIEUR ARRETER-QUAND-JE-VEUX
+            \item MONSIEUR TWADO
+        \end{enumerate}
+    }
+    \end{multicols}
+}
+\newpage
+
+%titre
+{\center
+    \hspace{0pt}\vfill
+    {\huge\textbf{Madame\\JE-VEUX-PAS-DORMIR\\}}
+    \vspace{\baselineskip}
+    {\Large\textit{\textrm{dagothig}}\\}
+    \hspace{0pt}\vfill
+    \begin{tikzpicture}
+    \node[text width=40pt](jeunesse){
+        \fontsize{8pt}{8pt}\selectfont JEUNESSE
+    };
+    \node[text width=40pt, above of=jeunesse, yshift=-18pt](diroum){
+        \fontsize{14pt}{14pt}\selectfont diroum
+    };
+    \end{tikzpicture}
+    \vspace{0.22in}
+}
+\newpage
+
+\txtpage{
 Madame Je-Veux-Pas-Dormir se planifiait toujours de grosses journées. Ce mardi ne serait pas une
 exception.
 
 Dès l'aurore, elle se réveilla, bondit de son lit, et commença immédiatement sa journée.
 Chaque minute passée à dormir, c'est une minute gâchée qu'elle disait toujours.
-\hspace{0pt}\vfill
-
+}
 \imgpage{img/page-1.jpg}
-
-\hspace{0pt}\vfill
-
+\txtpage{
 En ce mardi, elle débuta sa journée comme tant d'autres:
 
 Après avoir fait sa toilette, elle s'assit devant un bon déjeuner de crêpes et de confiture.
@@ -43,26 +118,18 @@ Après avoir fait sa toilette, elle s'assit devant un bon déjeuner de crêpes e
 encore.
 
 Ohho. Ça veut dire qu'il est temps d'aller faire de la musique!
-
-\hspace{0pt}\vfill
-
+}
 \imgpage{img/page-2.jpg}
-
-\hspace{0pt}\vfill
-
+\txtpage{
 Vite, car il ne fallait pas que le sommeil la rattrape, madame Je-Veux-Pas-Dormir quitta son
 déjeuner.
 
 Elle s'assit devant son piano. Un peu de musique et de danse, ça c'est une bonne idée.
 
 Oui, une petite balade, pas trop vite, et puis...
-
-\hspace{0pt}\vfill
-
+}
 \imgpage{img/page-3.jpg}
-
-\hspace{0pt}\vfill
-
+\txtpage{
 Madame Je-Veux-Pas-Dormir ouvrit les yeux.
 
 Tiens, c'est drôle elle est allongée sur son sofa. Elle n'était pas en train de faire du piano?
@@ -72,31 +139,23 @@ Tiens, c'est drôle elle est allongée sur son sofa. Elle n'était pas en train 
 Ohho. Elle s'était encore fait avoir.
 
 Il était déjà l'heure du dîner!
-
-\hspace{0pt}\vfill
-
+}
 \imgpage{img/page-4.jpg}
-
-\hspace{0pt}\vfill
-
+\txtpage{
 Plus tard cette journée-là, Madame Je-Veux-Pas-Dormir décida de faire une bonne marche dehors.
 
 Sur le chemin, elle croisa son bon ami, monsieur Je-Suis-Pas-Fatigué.
 
-- Vous avez l'air de bien triste mine, lui dit monsieur Je-Suis-Pas-Fatigué.
+-- Vous avez l'air de bien triste mine, lui dit monsieur Je-Suis-Pas-Fatigué.
 
-- Hélas, lui dit madame Je-Veux-Pas-Dormir. Je dois dormir tout les jours, alors je n'ai jamais le
+-- Hélas, lui dit madame Je-Veux-Pas-Dormir. Je dois dormir tout les jours, alors je n'ai jamais le
 temps de tout faire.
 
-- Vous connaissez le café? Lui répondit monsieur Je-Suis-Pas-Fatigué. Peut-être que ça vous
+-- Vous connaissez le café? Lui répondit monsieur Je-Suis-Pas-Fatigué. Peut-être que ça vous
 permettrait d'arrêter de dormir?
-
-\hspace{0pt}\vfill
-
+}
 \imgpage{img/page-5.jpg}
-
-\hspace{0pt}\vfill
-
+\txtpage{
 Le soir, arrivé 19h00, c'est comme tout les jours, madame Je-Veux-Pas-Dormir se met à bâiller et à
 fermer des yeux.
 
@@ -104,73 +163,49 @@ Mais cette fois-ci, elle en a assez. Elle se rappelle la recommendation de monsi
 Je-Suis-Pas-Fatigué.
 
 Elle a une idée! Ce serait la fin de toute ce sommeil néfaste.
-
-\hspace{0pt}\vfill
-
+}
 \imgpage{img/page-6.jpg}
-
-\hspace{0pt}\vfill
-
+\txtpage{
 Madame Je-Veux-Pas-Dormir appelle monsieur Je-Suis-Pas-Fatigué.
 
-- Bonsoir, annonce madame Je-Veux-Pas-Dormir. Je vous invite chez moi! Apportez le café, et ensemble
+-- Bonsoir, annonce madame Je-Veux-Pas-Dormir. Je vous invite chez moi! Apportez le café, et ensemble
 nous pourront passer toute la nuit ensembles. Pas besoin de dormir!
 
-- Oh mais c'est une excellente idée, lui répond monsieur Je-Suis-Pas-Fatigué. J'arrive dans quelques
+-- Oh mais c'est une excellente idée, lui répond monsieur Je-Suis-Pas-Fatigué. J'arrive dans quelques
 minutes.
-
-\hspace{0pt}\vfill
-
+}
 \imgpage{img/page-7.jpg}
-
-\hspace{0pt}\vfill
-
+\txtpage{
 Une fois arrivé, monsieur Je-Suis-Pas-Fatigué prépare vite le café. Ils se versent tout deux de
 grandes tasses, et boivent goulûment. Une grande nuit se prépare.
-
-\hspace{0pt}\vfill
-
+}
 \imgpage{img/page-8.jpg}
-
-\hspace{0pt}\vfill
-
+\txtpage{
 Toute la nuit, madame Je-Veux-pas-Dormir et monsieur Je-Suis-Pas-Fatigué peuvent faire toutes les
 choses qu'ils veulent.
 
 Madame Je-Veux-Pas-Dormir propose d'abord de faire un grand casse-tête de cent pièces. Pour une fois
 elle aura le temps de le faire au complet d'un coup.
-
-\hspace{0pt}\vfill
-
+}
 \imgpage{img/page-9.jpg}
-
-\hspace{0pt}\vfill
-
+\txtpage{
 Le long des activités, une bonne nuit remplie s'écoule. ALors que le ciel commence un peu à
 s'éclairer, monsieur Je-Suis-Pas-Fatigué prépare de nouveau du café.
 
 Madame Je-Veux-Pas-Dormir est épatée! Son plus grand problème est définitivement réglé. Plus besoin
 de dormir.
 
-- Bonne journée annonce-t-elle à monsieur Je-Suis-Pas-Dormir tandis qu'il repart chez lui.
-
-\hspace{0pt}\vfill
-
+-- Bonne journée annonce-t-elle à monsieur Je-Suis-Pas-Dormir tandis qu'il repart chez lui.
+}
 \imgpage{img/page-10.jpg}
-
-\hspace{0pt}\vfill
-
+\txtpage{
 Madame Je-Veux-Pas-Dormir commence donc sa nouvelle journée. Elle prépare ses crêpes pour son
 déjeuner. Ohho. Elle échappe ses crêpes! Ça ne lui arrive pas d'habitude pourtant.
 
 Elle s'assit ensuite pour manger. N'oublie-t-elle pas quelque chose?
-
-\hspace{0pt}\vfill
-
+}
 \imgpage{img/page-11.jpg}
-
-\hspace{0pt}\vfill
-
+\txtpage{
 Après un déjeuner un peu triste, madame Je-Veux-Pas-Dormir ne ressent toujours pas de fatigue! Le
 café fonctionne à merveille.
 
@@ -179,13 +214,9 @@ Elle en profite donc et va jouer un peu de piano.
 Do. Do. Do. Do... Do?
 
 Mais elle n'a idée quoi jouer...
-
-\hspace{0pt}\vfill
-
+}
 \imgpage{img/page-12.jpg}
-
-\hspace{0pt}\vfill
-
+\txtpage{
 La journée s'écoule drôlement. Madame Je-Veux-Pas-Dormir a plus de temps, mais elle a l'impression
 que rien ne va correctement. Étrange.
 
@@ -197,25 +228,17 @@ Arrivé au soir, elle rappelle monsieur Je-Suis-Pas-Fatigué.
 
 Monsieur Je-Suis-Pas-Fatigué ne répond pas.
 
-- Bon, on se reprendra une autre fois se dit donc madame Je-Veux-Pas-Dormir.
-
-\hspace{0pt}\vfill
-
+-- Bon, on se reprendra une autre fois se dit donc madame Je-Veux-Pas-Dormir.
+}
 \imgpage{img/page-13.jpg}
-
-\hspace{0pt}\vfill
-
+\txtpage{
 Madame Je-Veux-Pas-Dormir commence donc sa nuit: Elle se fait une grande tasse de café, qu'elle boit
 goulûment.
 
 Après la première tasse, elle se sent un peu fébrile, alors elle en boit une deuxième.
-
-\hspace{0pt}\vfill
-
+}
 \imgpage{img/page-14.jpg}
-
-\hspace{0pt}\vfill
-
+\txtpage{
 Madame Je-Veux-Pas-Dormir s'assoit ensuite pour faire un nouveau grand casse-tête de cent pièces.
 
 Elle n'est pas sûr de ce qui se passe, mais ça ne se passe pas bien, mais alors pas bien du tout!
@@ -224,13 +247,9 @@ Elle a du mal à bien distinguer où vont les pièces, elle a de la misère à l
 ses yeux sont lourds.
 
 Si lourds.
-
-\hspace{0pt}\vfill
-
+}
 \imgpage{img/page-15.jpg}
-
-\hspace{0pt}\vfill
-
+\txtpage{
 Madame Je-Veux-Pas-Dormir, s'installe sur son sofa. Elle se dit qu'elle va reposer ses yeux, pas
 trop longtemps. Son pendule dit qu'il est tout juste 20h00.
 
@@ -240,15 +259,32 @@ Cinq minutes?
 
 Lorsque madame Je-Veux-Pas-Dormir, elle regarde son pendule, elle se demande si le temps a reculé.
 Vraiment?
-
-\hspace{0pt}\vfill
-
+}
 \imgpage{img/page-16.jpg}
-
-\hspace{0pt}\vfill
-
+\txtpage{
 Le pendule dit 7h55!
-
+}
+%liste monsieurs
+\hspace{0pt}\\
+{\small LA COLLECTION MONSIEUR, C'EST AUSSI OUI PERSONNAGES}
+\newpage
+%légal (kwe?)
 \hspace{0pt}\vfill
+{\footnotesize\singlespacing
+Édité par diroum JEUNESSE, 2920, chemin de la tour, Montréal.\\
+Pas de dépôt légal: 2 juin 2027\\
+Définitivement hors la loi sur les publications destinées à la jeunesse.\\
+Achevé d'imprimer par Msieur-qui-imprime-pour-Ariel à Longueuil.\\
+\hspace{0pt}
+}
+\newpage
+%page blanche
+\hspace{0pt}
+\newpage
+
+%4e de couverture
+\begin{tikzpicture}[remember picture,overlay]
+\fill[orange] (current page.north east) -- +(-0.25in, 0.0in) -- +(-0.25in, -\paperheight) -- (current page.south east);
+\end{tikzpicture}
 
 \end{document}
