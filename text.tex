@@ -1,5 +1,6 @@
 \documentclass[12pt]{book}
 \usepackage{tikz}
+\usetikzlibrary{shapes.misc, positioning}
 \usepackage[paperwidth=5.5in, paperheight=5in, hmargin=0.5in, vmargin=0in]{geometry}
 \usepackage{layout}
 \usepackage[dvipsnames]{xcolor}
@@ -23,6 +24,14 @@
     {#1}
     \hspace{0pt}\vfill
     \newpage
+}
+
+\newcommand{\mrms}[3]{
+    \begin{tikzpicture}
+        \node[](pic){\includegraphics[width=0.75in,height=0.75in,keepaspectratio]{#3}};
+        \node[below of=pic, yshift=-2pt](title){\scriptsize{#1}};
+        \node[below of=pic, yshift=-11pt](txt){\scriptsize{#2}};
+    \end{tikzpicture}
 }
 
 \title{Madame Je-Veux-Pas-Dormir}
@@ -62,44 +71,58 @@
 \newpage
 
 %collection + légal
-\hspace{0pt}
-{\center
-    Collection DIROUM
-    \begin{multicols}{2}
-    {\scriptsize
-        \begin{enumerate}[nosep]
-            \item MADAME JE-VEUX-PAS-DORMIR
-            \item MADAME GOBELIN
-            \item MADAME NATA
-            \columnbreak
-            \item MONSIEUR JE-SUIS-PAS-FATIGUÉ
-            \item MONSIEUR BABA
-            \item MONSIEUR ARRETER-QUAND-JE-VEUX
-            \item MONSIEUR TWADO
-        \end{enumerate}
-    }
-    \end{multicols}
+\hspace{0pt}\break
+\normalsize
+COLLECTION\break «TWADO»\break
+\textbf{Titres parus :}\break
+{\small
+\begin{multicols}{2}
+    \begin{enumerate}[label=,leftmargin=0pt]
+        \item Madame JE-VEUX-PAS-DORMIR
+        \item Madame GOBELIN
+        \item Madame NATA
+        \item Madame FIN-DE-PHRASE
+        \item COSSIN LETTE
+        \item Dominus GABOUÉ
+        \columnbreak
+        \item Monsieur JE-SUIS-PAS-FATIGUÉ
+        \item Monsieur BABA
+        \item Monsieur ÇA-FAIT-LA-JOB
+        \item Monsieur ARRÊTER-QUAND-JE-VEUX
+        \item Monsieur TWADO
+        \item Monsieur MÉDIOCRE
+    \end{enumerate}
+\end{multicols}
 }
+\vfill
+\center
+\scriptsize\textbf{Mr. Men} and \textbf{Little Miss}\texttrademark \space \& \textcopyright 1984, The Hargreaves Organisation. Tous droits réservés.
+\break
+\scriptsize\textit{Madame Je-Veux-Pas-Dormir} \textcopyright\space 2027 diroum JEUNESSE (une société de Twado). Peu de droits réservés.
+\break
+\hspace{0pt}\break
 \newpage
+\raggedright\large
 
 %titre
-{\center
-    \hspace{0pt}\vfill
-    {\huge\textbf{Madame\\JE-VEUX-PAS-DORMIR\\}}
-    \vspace{\baselineskip}
-    {\Large\textit{\textrm{dagothig}}\\}
-    \hspace{0pt}\vfill
-    \begin{tikzpicture}
-    \node[text width=40pt](jeunesse){
-        \fontsize{8pt}{8pt}\selectfont JEUNESSE
-    };
-    \node[text width=40pt, above of=jeunesse, yshift=-18pt](diroum){
-        \fontsize{14pt}{14pt}\selectfont diroum
-    };
-    \end{tikzpicture}
-    \vspace{0.22in}
-}
+\center
+\hspace{0pt}\vfill
+\huge\textbf{Madame\\JE-VEUX-PAS-DORMIR\\}
+\vspace{\baselineskip}
+\Large\textit{\textrm{dagothig}}\\
+\hspace{0pt}\vfill
+\begin{tikzpicture}
+\node[text width=40pt](jeunesse){
+    \fontsize{8pt}{8pt}\selectfont JEUNESSE
+};
+\node[text width=40pt, above of=jeunesse, yshift=-18pt](diroum){
+    \fontsize{14pt}{14pt}\selectfont diroum
+};
+\end{tikzpicture}
+\vspace{0.22in}
+
 \newpage
+\raggedright\large
 
 \txtpage{
 Madame Je-Veux-Pas-Dormir se planifiait toujours de grosses journées. Ce mardi ne serait pas une
@@ -264,20 +287,24 @@ Vraiment?
 \txtpage{
 Le pendule dit 7h55!
 }
-%liste monsieurs
-\hspace{0pt}\\
-{\small LA COLLECTION MONSIEUR, C'EST AUSSI OUI PERSONNAGES}
-\newpage
+
 %légal (kwe?)
+
 \hspace{0pt}\vfill
-{\footnotesize\singlespacing
-Édité par diroum JEUNESSE, 2920, chemin de la tour, Montréal.\\
-Pas de dépôt légal: 2 juin 2027\\
-Définitivement hors la loi sur les publications destinées à la jeunesse.\\
-Achevé d'imprimer par Msieur-qui-imprime-pour-Ariel à Longueuil.\\
-\hspace{0pt}
-}
+\center\footnotesize
+\begin{tikzpicture}
+    \node[rounded rectangle, text width=140pt, fill=black, align=center](lien){
+        \textcolor{white}{Retrouve tous tes héros sur \textbf{https://twado.neocities.org/}}
+    };
+\end{tikzpicture}
+
+Édité par diroum JEUNESSE, 2920, chemin de la tour, Montréal.\break
+Pas de dépôt légal: 2 juin 2027\break
+Définitivement hors la loi sur les publications destinées à la jeunesse.\break
+Achevé d'imprimer par Msieur-qui-imprime-pour-Ariel à Longueuil.\break
+\hspace{0pt}\break
 \newpage
+
 %page blanche
 \hspace{0pt}
 \newpage
@@ -285,6 +312,24 @@ Achevé d'imprimer par Msieur-qui-imprime-pour-Ariel à Longueuil.\\
 %4e de couverture
 \begin{tikzpicture}[remember picture,overlay]
 \fill[orange] (current page.north east) -- +(-0.25in, 0.0in) -- +(-0.25in, -\paperheight) -- (current page.south east);
+\node[xshift=-0.125in](gowee) at (current page.center){
+    \setlength{\tabcolsep}{0pt}
+    \begin{tabular} { c c c c c }
+        \mrms{Madame}{JE-VEUX-PAS-DORMIR}{img/cover.jpg} &
+        \mrms{Madame}{GOBELIN}{img/mme-gobelin.jpg} &
+        \mrms{Madame}{NATA}{img/mme-nata.jpg} &
+        \mrms{Madame}{FIN-DE-PHRASE}{img/mme-fin-de-phrase.jpg} \\
+        \mrms{COSSIN}{LETTE}{img/cossin.png} &
+        \mrms{Dominus}{GABOUÉ}{img/d-gaboue.jpg} &
+        \mrms{Monsieur}{JE-SUIS-PAS-FATIGUÉ}{img/m-je-suis-pas-fatigue.jpg} &
+        \mrms{Monsieur}{BABA}{img/m-baba.jpg} \\
+        \mrms{Monsieur}{ÇA-FAIT-LA-JOB}{img/m-ca-fait-la-job.jpg} &
+        \mrms{Monsieur}{ARRÊTER-QUAND-JE-VEUX}{img/m-arreter-quand-je-veux.jpg} &
+        \mrms{Monsieur}{TWADO}{img/m-twado.jpg} &
+        \mrms{Monsieur}{MÉDIOCRE}{img/barnak.jpg}
+    \end{tabular}
+};
+\node[above of=gowee, yshift=1.5in](title){\textbf{COLLECTION «TWADO»}};
 \end{tikzpicture}
 
 \end{document}
