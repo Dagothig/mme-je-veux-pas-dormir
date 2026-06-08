@@ -1,7 +1,7 @@
 \documentclass[12pt,twoside]{book}
 \usepackage{tikz}
 \usetikzlibrary{shapes.misc, positioning}
-\usepackage[paperwidth=5.5in, paperheight=5in, hmargin=0.5in, vmargin=0in, outer=0.75in, inner=0.5in]{geometry}
+\usepackage[paperwidth=5.5in, paperheight=5in, hmargin=0.5in, vmargin=0.5in, outer=0.75in, inner=0.5in]{geometry}
 \usepackage{layout}
 \usepackage[dvipsnames]{xcolor}
 \usepackage{multicol}
@@ -11,7 +11,8 @@
 \renewcommand*\familydefault{\sfdefault}
 \usepackage[T1]{fontenc}
 \setlength{\parindent}{0pt}
-\setlength{\parskip}{12pt}
+\setlength{\parskip}{0pt}
+\setstretch{1.0}
 \definecolor{orange}{rgb}{0.75, 0.5, 0.25}
 
 \newcommand{\imgpage}[1]{
@@ -21,9 +22,15 @@
 }
 
 \newcommand{\txtpage}[1]{
-    \hspace{0pt}\vfill
-    {#1}
-    \hspace{0pt}\vfill
+    \newgeometry{vmargin=0.0in}
+    \null\vfill
+    \begin{minipage}{\textwidth}
+        \setstretch{1.5}
+        \setlength{\parskip}{12pt}
+        #1
+    \end{minipage}
+    \vfill
+    \restoregeometry
     \newpage
 }
 
@@ -46,9 +53,9 @@
 \raggedright
 \pagenumbering{gobble}
 \begin{document}
-\large
 
 %1ère de couverture
+\large
 \begin{tikzpicture}[remember picture,overlay]
 \node[xshift=0.125in, yshift=-0.25in](img) at (current page.center){\includegraphics[width=4.5in,height=4in]{img/cover.jpg}};
 \fill[orange] (current page.north west) -- +(0.25in, 0.0in) -- +(0.25in, -\paperheight) -- (current page.south west);
@@ -67,10 +74,9 @@
 };
 \end{tikzpicture}
 \newpage
+\normalsize
 
 %collection + légal
-\hspace{0pt}\break
-\normalsize
 COLLECTION\break «TWADO»\break
 \textbf{Titres parus :}\break
 {\small
@@ -97,30 +103,23 @@ COLLECTION\break «TWADO»\break
 \scriptsize\textbf{Mr. Men} and \textbf{Little Miss}\texttrademark \space \& \textcopyright 1984, The Hargreaves Organisation. Tous droits réservés.
 \break
 \scriptsize\textit{Madame Je-Veux-Pas-Dormir} \textcopyright\space 2027 diroum JEUNESSE (une société de Twado). Peu de droits réservés.
-\break
-\hspace{0pt}\break
 \newpage
-\raggedright\large
+\raggedright\normalsize
 
 %titre
 \center
-\hspace{0pt}\vfill
+\null\vfill
 \huge\textbf{Madame\\JE-VEUX-PAS-DORMIR\\}
 \vspace{\baselineskip}
 \Large\textit{\textrm{dagothig}}\\
-\hspace{0pt}\vfill
+\vfill
 \begin{tikzpicture}
-\node[text width=40pt](jeunesse){
-    \fontsize{8pt}{8pt}\selectfont JEUNESSE
-};
-\node[text width=40pt, above of=jeunesse, yshift=-18pt](diroum){
-    \fontsize{14pt}{14pt}\selectfont diroum
-};
+\fontsize{8pt}{8pt}\selectfont \node[text width=40pt](jeunesse){JEUNESSE};
+\fontsize{14pt}{14pt}\selectfont \node[text width=40pt, above of=jeunesse, yshift=-18pt](diroum){diroum};
 \end{tikzpicture}
-\vspace{0.22in}
 
 \newpage
-\raggedright\large
+\raggedright\normalsize
 
 \txtpage{
 Madame Je-Veux-Pas-Dormir se planifiait toujours de grosses journées. Ce mardi ne serait pas une
@@ -197,7 +196,9 @@ minutes.
 \imgpage{img/page-7.jpg}
 \txtpage{
 Une fois arrivé, monsieur Je-Suis-Pas-Fatigué prépare vite le café. Ils se versent tout deux de
-grandes tasses, et boivent goulûment. Une grande nuit se prépare.
+grandes tasses, et boivent goulûment.
+
+Une grande nuit se prépare.
 }
 \imgpage{img/page-8.jpg}
 \txtpage{
@@ -297,12 +298,13 @@ Le pendule dit 7h55!
     };
 \end{tikzpicture}
 
+\vspace{12pt}\scriptsize
 Édité par diroum JEUNESSE, 2920, chemin de la tour, Montréal.\break
 Pas de dépôt légal: 2 juin 2027\break
 Définitivement hors la loi sur les publications destinées à la jeunesse.\break
-Achevé d'imprimer par Msieur-qui-imprime-pour-Ariel à Longueuil.\break
-\hspace{0pt}\break
+Achevé d'imprimer par Msieur-qui-imprime-pour-Ariel à Longueuil.
 \newpage
+\normalsize
 
 \emptypage
 
