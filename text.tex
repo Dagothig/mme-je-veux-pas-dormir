@@ -1,7 +1,7 @@
-\documentclass[12pt]{book}
+\documentclass[12pt,twoside]{book}
 \usepackage{tikz}
 \usetikzlibrary{shapes.misc, positioning}
-\usepackage[paperwidth=5.5in, paperheight=5in, hmargin=0.5in, vmargin=0in]{geometry}
+\usepackage[paperwidth=5.5in, paperheight=5in, hmargin=0.5in, vmargin=0in, outer=0.75in, inner=0.5in]{geometry}
 \usepackage{layout}
 \usepackage[dvipsnames]{xcolor}
 \usepackage{multicol}
@@ -19,10 +19,16 @@
     \node[inner sep=0pt] at (current page.center){\includegraphics[width=5.5in,height=5in]{#1}};
     \newpage
 }
+
 \newcommand{\txtpage}[1]{
     \hspace{0pt}\vfill
     {#1}
     \hspace{0pt}\vfill
+    \newpage
+}
+
+\newcommand{\emptypage}[0]{
+    \hspace{0pt}
     \newpage
 }
 
@@ -62,14 +68,6 @@
 \end{tikzpicture}
 \newpage
 
-%page blanche
-\hspace{0pt}
-\newpage
-
-%page blance
-\hspace{0pt}
-\newpage
-
 %collection + légal
 \hspace{0pt}\break
 \normalsize
@@ -82,8 +80,8 @@ COLLECTION\break «TWADO»\break
         \item Madame GOBELIN
         \item Madame NATA
         \item Madame FIN-DE-PHRASE
-        \item COSSIN LETTE
-        \item Dominus GABOUÉ
+        \item Monsieur LETTE
+        \item Monsieur GABOUÉ
         \columnbreak
         \item Monsieur JE-SUIS-PAS-FATIGUÉ
         \item Monsieur BABA
@@ -133,7 +131,7 @@ Chaque minute passée à dormir, c'est une minute gâchée qu'elle disait toujou
 }
 \imgpage{img/page-1.jpg}
 \txtpage{
-En ce mardi, elle débuta sa journée comme tant d'autres:
+Elle débuta sa journée comme tant d'autres:
 
 Après avoir fait sa toilette, elle s'assit devant un bon déjeuner de crêpes et de confiture.
 
@@ -165,13 +163,13 @@ Il était déjà l'heure du dîner!
 }
 \imgpage{img/page-4.jpg}
 \txtpage{
-Plus tard cette journée-là, Madame Je-Veux-Pas-Dormir décida de faire une bonne marche dehors.
+Plus tard cette journée-là, Madame Je-Veux-Pas-Dormir décida de faire une marche dehors.
 
-Sur le chemin, elle croisa son bon ami, monsieur Je-Suis-Pas-Fatigué.
+Sur le chemin, elle croisa son ami, monsieur Je-Suis-Pas-Fatigué.
 
 -- Vous avez l'air de bien triste mine, lui dit monsieur Je-Suis-Pas-Fatigué.
 
--- Hélas, lui dit madame Je-Veux-Pas-Dormir. Je dois dormir tout les jours, alors je n'ai jamais le
+-- Hélas, lui dit madame Je-Veux-Pas-Dormir. Je dois dormir tous les jours, alors je n'ai jamais le
 temps de tout faire.
 
 -- Vous connaissez le café? Lui répondit monsieur Je-Suis-Pas-Fatigué. Peut-être que ça vous
@@ -179,20 +177,20 @@ permettrait d'arrêter de dormir?
 }
 \imgpage{img/page-5.jpg}
 \txtpage{
-Le soir, arrivé 19h00, c'est comme tout les jours, madame Je-Veux-Pas-Dormir se met à bâiller et à
+Le soir, arrivé 19h00, c'est comme tous les jours, madame Je-Veux-Pas-Dormir se met à bâiller et à
 fermer des yeux.
 
 Mais cette fois-ci, elle en a assez. Elle se rappelle la recommendation de monsieur
 Je-Suis-Pas-Fatigué.
 
-Elle a une idée! Ce serait la fin de toute ce sommeil néfaste.
+Elle a une idée! Ce serait la fin de tout ce sommeil néfaste.
 }
 \imgpage{img/page-6.jpg}
 \txtpage{
 Madame Je-Veux-Pas-Dormir appelle monsieur Je-Suis-Pas-Fatigué.
 
--- Bonsoir, annonce madame Je-Veux-Pas-Dormir. Je vous invite chez moi! Apportez le café, et ensemble
-nous pourront passer toute la nuit ensembles. Pas besoin de dormir!
+-- Bonsoir, annonce madame Je-Veux-Pas-Dormir. Je vous invite chez moi! Apportez le café, et
+ nous pourront passer toute la nuit ensemble. Pas besoin de dormir!
 
 -- Oh mais c'est une excellente idée, lui répond monsieur Je-Suis-Pas-Fatigué. J'arrive dans quelques
 minutes.
@@ -218,7 +216,7 @@ s'éclairer, monsieur Je-Suis-Pas-Fatigué prépare de nouveau du café.
 Madame Je-Veux-Pas-Dormir est épatée! Son plus grand problème est définitivement réglé. Plus besoin
 de dormir.
 
--- Bonne journée annonce-t-elle à monsieur Je-Suis-Pas-Dormir tandis qu'il repart chez lui.
+-- Bonne journée annonce-t-elle à monsieur Je-Suis-Pas-Fatigué tandis qu'il repart chez lui.
 }
 \imgpage{img/page-10.jpg}
 \txtpage{
@@ -236,7 +234,7 @@ Elle en profite donc et va jouer un peu de piano.
 
 Do. Do. Do. Do... Do?
 
-Mais elle n'a idée quoi jouer...
+Mais elle n'a pas idée quoi jouer...
 }
 \imgpage{img/page-12.jpg}
 \txtpage{
@@ -280,7 +278,7 @@ Elle ferme un oeil, puis elle ferme l'autre, puis dans cinq minutes elle pourra 
 
 Cinq minutes?
 
-Lorsque madame Je-Veux-Pas-Dormir, elle regarde son pendule, elle se demande si le temps a reculé.
+Lorsque madame Je-Veux-Pas-Dormir regarde son pendule, elle se demande si le temps a reculé.
 Vraiment?
 }
 \imgpage{img/page-16.jpg}
@@ -288,9 +286,7 @@ Vraiment?
 Le pendule dit 7h55!
 }
 
-%page blanche
-\hspace{0pt}
-\newpage
+\emptypage
 
 %légal (kwe?)
 
@@ -309,9 +305,7 @@ Achevé d'imprimer par Msieur-qui-imprime-pour-Ariel à Longueuil.\break
 \hspace{0pt}\break
 \newpage
 
-%page blanche
-\hspace{0pt}
-\newpage
+\emptypage
 
 %4e de couverture
 \begin{tikzpicture}[remember picture,overlay]
@@ -323,8 +317,8 @@ Achevé d'imprimer par Msieur-qui-imprime-pour-Ariel à Longueuil.\break
         \mrms{Madame}{GOBELIN}{img/mme-gobelin.jpg} &
         \mrms{Madame}{NATA}{img/mme-nata.jpg} &
         \mrms{Madame}{FIN-DE-PHRASE}{img/mme-fin-de-phrase.jpg} \\
-        \mrms{COSSIN}{LETTE}{img/cossin.png} &
-        \mrms{Dominus}{GABOUÉ}{img/d-gaboue.jpg} &
+        \mrms{Monsieur}{LETTE}{img/cossin.png} &
+        \mrms{Monsieur}{GABOUÉ}{img/d-gaboue.jpg} &
         \mrms{Monsieur}{JE-SUIS-PAS-FATIGUÉ}{img/m-je-suis-pas-fatigue.jpg} &
         \mrms{Monsieur}{BABA}{img/m-baba.jpg} \\
         \mrms{Monsieur}{ÇA-FAIT-LA-JOB}{img/m-ca-fait-la-job.jpg} &
@@ -335,5 +329,6 @@ Achevé d'imprimer par Msieur-qui-imprime-pour-Ariel à Longueuil.\break
 };
 \node[above of=gowee, yshift=1.5in](title){\textbf{COLLECTION «TWADO»}};
 \end{tikzpicture}
+\newpage
 
 \end{document}
