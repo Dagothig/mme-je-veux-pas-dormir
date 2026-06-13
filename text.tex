@@ -1,7 +1,11 @@
 \documentclass[12pt,twoside]{book}
 \usepackage{tikz}
 \usetikzlibrary{shapes.misc, positioning}
-\usepackage[paperwidth=5.5in, paperheight=5in, hmargin=0.5in, vmargin=0.5in, outer=0.75in, inner=0.5in]{geometry}
+\usepackage[
+    paperwidth=5.625in, paperheight=5.25in,
+    hmargin=0.5in, vmargin=0.5in,
+    outer=0.625in, inner=0.5in
+]{geometry}
 \usepackage{layout}
 \usepackage[dvipsnames]{xcolor}
 \usepackage{multicol}
@@ -13,11 +17,13 @@
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0pt}
 \setstretch{1.0}
-\definecolor{orange}{rgb}{0.75, 0.5, 0.25}
+\definecolor{orange}{rgb}{0.90, 0.45, 0.18}
 
 \newcommand{\imgpage}[1]{
     \tikz[remember picture,overlay]
-    \node[inner sep=0pt] at (current page.center){\includegraphics[width=5.5in,height=5in]{#1}};
+    \node[inner sep=0pt] at (current page.center){
+        \includegraphics[width=5.625in,height=5.25in]{#1}
+    };
     \newpage
 }
 
@@ -57,16 +63,15 @@
 %1ère de couverture
 \large
 \begin{tikzpicture}[remember picture,overlay]
-\node[xshift=0.125in, yshift=-0.25in](img) at (current page.center){\includegraphics[width=4.5in,height=4in]{img/cover.jpg}};
+\node[xshift=0.125in, yshift=-0.25in](img) at (current page.center){\includegraphics[width=4.5in,height=4in]{./img/cover.jpg}};
 \fill[orange] (current page.north west) -- +(0.3in, 0.0in) -- +(0.3in, -\paperheight) -- (current page.south west);
-\node[xshift=0.3in-5pt, yshift=0.125in, rotate=90, right] at (current page.south west){\textcolor{white}{MONSIEUR \textbf{MADAME}\hspace{1.575in}\textbf{DAGOTHIG}}};
-\node[xshift=0.125in, yshift=-9pt-0.25in](name) at (current page.north){
-    \textcolor{orange}{
-        \huge
-        \textbf{M}ME. \textbf{JE-VEUX-PAS-DORMIR}
-    }
+\node[xshift=0.3in-5pt, yshift=0.25in, rotate=90, right] at (current page.south west){\textcolor{white}{
+    MONSIEUR \textbf{MADAME}\hspace{1.575in}\textbf{DAGOTHIG}}
 };
-\node[text width=40pt, xshift=-56pt, yshift=0.25in](jeunesse) at (current page.south east){
+\node[xshift=0.125in, yshift=-9pt-0.375in](name) at (current page.north){
+    \textcolor{orange}{\huge\textbf{M}ME. \textbf{JE-VEUX-PAS-DORMIR}}
+};
+\node[text width=40pt, xshift=-56pt, yshift=0.375in](jeunesse) at (current page.south east){
     \fontsize{8pt}{8pt}\selectfont JEUNESSE
 };
 \node[text width=40pt, above of=jeunesse, yshift=-18pt](diroum){
@@ -102,7 +107,7 @@ COLLECTION\break «TWADO»\break
 \center
 \scriptsize\textbf{Mr. Men} and \textbf{Little Miss}\texttrademark \space \& \textcopyright 1984, The Hargreaves Organisation. Tous droits réservés.
 \break
-\scriptsize\textit{Madame Je-Veux-Pas-Dormir} \textcopyright\space 2027 diroum JEUNESSE (une société de Twado). Peu de droits réservés.
+\scriptsize\textit{Madame Je-Veux-Pas-Dormir} \textcopyright\space 2026 diroum JEUNESSE (une société de Twado). Peu de droits réservés.
 \newpage
 \raggedright\normalsize
 
@@ -128,7 +133,7 @@ exception.
 Dès l'aurore, elle se réveilla, bondit de son lit, et commença immédiatement sa journée.
 Chaque minute passée à dormir, c'est une minute gâchée qu'elle disait toujours.
 }
-\imgpage{img/page-1.jpg}
+\imgpage{./img/page-1.jpg}
 \txtpage{
 Elle débuta sa journée comme tant d'autres:
 
@@ -137,9 +142,9 @@ Après avoir fait sa toilette, elle s'assit devant un bon déjeuner de crêpes e
 À la fin de son déjeuner, elle bâilla. Puis alors qu'elle pensait en être sortie, elle bâilla
 encore.
 
-Ohho. Ça veut dire qu'il est temps d'aller faire de la musique!
+Oh oh! Ça veut dire qu'il est temps d'aller faire de la musique!
 }
-\imgpage{img/page-2.jpg}
+\imgpage{./img/page-2.jpg}
 \txtpage{
 Vite, car il ne fallait pas que le sommeil la rattrape, madame Je-Veux-Pas-Dormir quitta son
 déjeuner.
@@ -148,7 +153,7 @@ Elle s'assit devant son piano. Un peu de musique et de danse, ça c'est une bonn
 
 Oui, une petite balade, pas trop vite, et puis...
 }
-\imgpage{img/page-3.jpg}
+\imgpage{./img/page-3.jpg}
 \txtpage{
 Madame Je-Veux-Pas-Dormir ouvrit les yeux.
 
@@ -156,13 +161,13 @@ Tiens, c'est drôle elle est allongée sur son sofa. Elle n'était pas en train 
 
 ...
 
-Ohho. Elle s'était encore fait avoir.
+Oh oh! Elle s'était encore fait avoir.
 
 Il était déjà l'heure du dîner!
 }
-\imgpage{img/page-4.jpg}
+\imgpage{./img/page-4.jpg}
 \txtpage{
-Plus tard cette journée-là, Madame Je-Veux-Pas-Dormir décida de faire une marche dehors. Sur le
+Plus tard cette journée-là, Madame Je-Veux-Pas-Dormir fit une promenade. Sur le
 chemin, elle croisa son ami, monsieur Je-Suis-Pas-Fatigué.
 
 -- Vous avez l'air de bien triste mine, lui dit monsieur Je-Suis-Pas-Fatigué.
@@ -173,7 +178,7 @@ temps de tout faire.
 -- Vous connaissez le café? Lui répondit monsieur Je-Suis-Pas-Fatigué. Peut-être que ça vous
 permettrait d'arrêter de dormir?
 }
-\imgpage{img/page-5.jpg}
+\imgpage{./img/page-5.jpg}
 \txtpage{
 Le soir, arrivé 19h00, c'est comme tous les jours, madame Je-Veux-Pas-Dormir se met à bâiller et à
 fermer des yeux.
@@ -183,7 +188,7 @@ Je-Suis-Pas-Fatigué.
 
 Elle a une idée! Ce serait la fin de tout ce sommeil néfaste.
 }
-\imgpage{img/page-6.jpg}
+\imgpage{./img/page-6.jpg}
 \txtpage{
 Madame Je-Veux-Pas-Dormir appelle monsieur Je-Suis-Pas-Fatigué.
 
@@ -193,14 +198,14 @@ Madame Je-Veux-Pas-Dormir appelle monsieur Je-Suis-Pas-Fatigué.
 -- Oh mais c'est une excellente idée, lui répond monsieur Je-Suis-Pas-Fatigué. J'arrive dans quelques
 minutes.
 }
-\imgpage{img/page-7.jpg}
+\imgpage{./img/page-7.jpg}
 \txtpage{
 Une fois arrivé, monsieur Je-Suis-Pas-Fatigué prépare vite le café. Ils se versent tout deux de
 grandes tasses, et boivent goulûment.
 
 Une grande nuit se prépare.
 }
-\imgpage{img/page-8.jpg}
+\imgpage{./img/page-8.jpg}
 \txtpage{
 Toute la nuit, madame Je-Veux-pas-Dormir et monsieur Je-Suis-Pas-Fatigué peuvent faire toutes les
 choses qu'ils veulent.
@@ -208,7 +213,7 @@ choses qu'ils veulent.
 Madame Je-Veux-Pas-Dormir propose d'abord de faire un grand casse-tête de cent pièces. Pour une fois
 elle aura le temps de le faire au complet d'un coup.
 }
-\imgpage{img/page-9.jpg}
+\imgpage{./img/page-9.jpg}
 \txtpage{
 Le long des activités, une bonne nuit remplie s'écoule. ALors que le ciel commence un peu à
 s'éclairer, monsieur Je-Suis-Pas-Fatigué prépare de nouveau du café.
@@ -218,14 +223,14 @@ de dormir.
 
 -- Bonne journée annonce-t-elle à monsieur Je-Suis-Pas-Fatigué tandis qu'il repart chez lui.
 }
-\imgpage{img/page-10.jpg}
+\imgpage{./img/page-10.jpg}
 \txtpage{
 Madame Je-Veux-Pas-Dormir commence donc sa nouvelle journée. Elle prépare ses crêpes pour son
-déjeuner. Ohho. Elle échappe ses crêpes! Ça ne lui arrive pas d'habitude pourtant.
+déjeuner. Oh oh! Elle échappe ses crêpes! Ça ne lui arrive pas d'habitude pourtant.
 
 Elle s'assit ensuite pour manger. N'oublie-t-elle pas quelque chose?
 }
-\imgpage{img/page-11.jpg}
+\imgpage{./img/page-11.jpg}
 \txtpage{
 Après un déjeuner un peu triste, madame Je-Veux-Pas-Dormir ne ressent toujours pas de fatigue! Le
 café fonctionne à merveille.
@@ -236,7 +241,7 @@ Do. Do. Do. Do... Do?
 
 Mais elle n'a pas idée quoi jouer...
 }
-\imgpage{img/page-12.jpg}
+\imgpage{./img/page-12.jpg}
 \txtpage{
 La journée s'écoule drôlement. Madame Je-Veux-Pas-Dormir a plus de temps, mais elle a l'impression
 que rien ne va correctement. Étrange.
@@ -251,14 +256,14 @@ Monsieur Je-Suis-Pas-Fatigué ne répond pas.
 
 -- Bon, on se reprendra une autre fois se dit donc madame Je-Veux-Pas-Dormir.
 }
-\imgpage{img/page-13.jpg}
+\imgpage{./img/page-13.jpg}
 \txtpage{
 Madame Je-Veux-Pas-Dormir commence donc sa nuit: Elle se fait une grande tasse de café, qu'elle boit
 goulûment.
 
 Après la première tasse, elle se sent un peu fébrile, alors elle en boit une deuxième.
 }
-\imgpage{img/page-14.jpg}
+\imgpage{./img/page-14.jpg}
 \txtpage{
 Madame Je-Veux-Pas-Dormir s'assoit ensuite pour faire un nouveau grand casse-tête de cent pièces.
 
@@ -269,7 +274,7 @@ ses yeux sont lourds.
 
 Si lourds.
 }
-\imgpage{img/page-15.jpg}
+\imgpage{./img/page-15.jpg}
 \txtpage{
 Madame Je-Veux-Pas-Dormir, s'installe sur son sofa. Elle se dit qu'elle va reposer ses yeux, pas
 trop longtemps. Son pendule dit qu'il est tout juste 20h00.
@@ -281,7 +286,7 @@ Cinq minutes?
 Lorsque madame Je-Veux-Pas-Dormir regarde son pendule, elle se demande si le temps a reculé.
 Vraiment?
 }
-\imgpage{img/page-16.jpg}
+\imgpage{./img/page-16.jpg}
 \txtpage{
 Le pendule dit 7h55!
 }
@@ -300,9 +305,9 @@ Le pendule dit 7h55!
 
 \vspace{12pt}\scriptsize
 Édité par diroum JEUNESSE, 2920, chemin de la tour, Montréal.\break
-Pas de dépôt légal: 2 juin 2027\break
+Pas de dépôt légal: 2 juin 2026\break
 Définitivement hors la loi sur les publications destinées à la jeunesse.\break
-Achevé d'imprimer par Msieur-qui-imprime-pour-Ariel à Longueuil.
+Achevé d'imprimer par Myriam à Montréal.
 \newpage
 \normalsize
 
@@ -314,18 +319,18 @@ Achevé d'imprimer par Msieur-qui-imprime-pour-Ariel à Longueuil.
 \node[xshift=-0.125in](gowee) at (current page.center){
     \setlength{\tabcolsep}{0pt}
     \begin{tabular} { c c c c c }
-        \mrms{Madame}{JE-VEUX-PAS-DORMIR}{img/cover.jpg} &
-        \mrms{Madame}{GOBELIN}{img/mme-gobelin.jpg} &
-        \mrms{Madame}{NATA}{img/mme-nata.jpg} &
-        \mrms{Madame}{FIN-DE-PHRASE}{img/mme-fin-de-phrase.jpg} \\
-        \mrms{Monsieur}{LETTE}{img/cossin.jpg} &
-        \mrms{Monsieur}{GABOUÉ}{img/d-gaboue.jpg} &
-        \mrms{Monsieur}{JE-SUIS-PAS-FATIGUÉ}{img/m-je-suis-pas-fatigue.jpg} &
-        \mrms{Monsieur}{BABA}{img/m-baba.jpg} \\
-        \mrms{Monsieur}{ÇA-FAIT-LA-JOB}{img/m-ca-fait-la-job.jpg} &
-        \mrms{Monsieur}{ARRÊTER-QUAND-JE-VEUX}{img/m-arreter-quand-je-veux.jpg} &
-        \mrms{Monsieur}{TWADO}{img/m-twado.jpg} &
-        \mrms{Monsieur}{MÉDIOCRE}{img/barnak.jpg}
+        \mrms{Madame}{JE-VEUX-PAS-DORMIR}{./img/cover.jpg} &
+        \mrms{Madame}{GOBELIN}{./img/mme-gobelin.jpg} &
+        \mrms{Madame}{NATA}{./img/mme-nata.jpg} &
+        \mrms{Madame}{FIN-DE-PHRASE}{./img/mme-fin-de-phrase.jpg} \\
+        \mrms{Monsieur}{LETTE}{./img/cossin.jpg} &
+        \mrms{Monsieur}{GABOUÉ}{./img/d-gaboue.jpg} &
+        \mrms{Monsieur}{JE-SUIS-PAS-FATIGUÉ}{./img/m-je-suis-pas-fatigue.jpg} &
+        \mrms{Monsieur}{BABA}{./img/m-baba.jpg} \\
+        \mrms{Monsieur}{ÇA-FAIT-LA-JOB}{./img/m-ca-fait-la-job.jpg} &
+        \mrms{Monsieur}{ARRÊTER-QUAND-JE-VEUX}{./img/m-arreter-quand-je-veux.jpg} &
+        \mrms{Monsieur}{TWADO}{./img/m-twado.jpg} &
+        \mrms{Monsieur}{MÉDIOCRE}{./img/barnak.jpg}
     \end{tabular}
 };
 \node[above of=gowee, yshift=1.5in](title){\textbf{COLLECTION «TWADO»}};

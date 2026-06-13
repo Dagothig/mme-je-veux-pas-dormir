@@ -1,8 +1,10 @@
-\documentclass[12pt,letterpaper]{book}
+\documentclass[12pt,legalpaper]{book}
 \usepackage{pdfpages}
+\usepackage[]{geometry}
+\geometry{paperwidth=5in, paperheight=11in, margin=0in, nohead}
+\usepackage[cam,legal,center]{crop}
 \begin{document}
 \includepdf[
-    pages=-, nup=2x1, noautoscale,
-    frame, booklet, landscape
+    pages={3-38}, nup=2x1, noautoscale, booklet, landscape
 ]{text.pdf}
 \end{document}
