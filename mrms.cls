@@ -1,9 +1,14 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{mrms}[2026/06/14 Mr and little ms]
 
-\DeclareOption{ptit}{\newcommand{\tit}{ptit}}
-\DeclareOption{pname}{\newcommand{\name}{pname}}
-\ProcessOptions\relax
+\RequirePackage{kvoptions}
+\SetupKeyvalOptions{family=mrms, prefix=mrms@}
+\DeclareStringOption[<TITLE>]{title}
+\DeclareStringOption[<NAME>]{name}
+\DeclareStringOption[0.5]{r}
+\DeclareStringOption[0.5]{g}
+\DeclareStringOption[0.5]{b}
+\ProcessKeyvalOptions*
 
 \LoadClass[12pt,twoside]{book}
 
@@ -20,23 +25,26 @@
 \usepackage{enumitem}
 \usepackage{setspace}
 \usepackage{tgadventor}
+\usepackage{ifthen}
 \renewcommand*\familydefault{\sfdefault}
 \usepackage[T1]{fontenc}
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0pt}
 \setstretch{1.0}
-\definecolor{primary}{rgb}{0.90, 0.45, 0.18}
+\definecolor{primary}{rgb}{\mrms@r, \mrms@g, \mrms@b}
+
+\newcommand{\ifmr}[2]{\ifthenelse{\equal{\mrms@title}{Monsieur}}{#1}{#2}}
 
 \newcommand{\coverpage}[1]{
     \large
     \begin{tikzpicture}[remember picture,overlay]
     \node[xshift=0.125in, yshift=-0.25in](img) at (current page.center){\includegraphics[width=4.5in,height=4in]{#1}};
     \fill[primary] (current page.north west) -- +(0.3in, 0.0in) -- +(0.3in, -\paperheight) -- (current page.south west);
-    \node[xshift=0.3in-5pt, yshift=0.25in, rotate=90, right] at (current page.south west){\textcolor{white}{
-        MONSIEUR \textbf{MADAME}\hspace{1.575in}\textbf{DAGOTHIG}}
+    \node[xshift=0.3in-5pt, yshift=0.25in, rotate=90, right] at (current page.south west){
+        \textcolor{white}{\ifmr{\textbf{MONSIEUR} MADAME}{MONSIEUR \textbf{MADAME}}\hspace{1.575in}\textbf{DAGOTHIG}}
     };
     \node[xshift=0.125in, yshift=-9pt-0.375in](name) at (current page.north){
-        \textcolor{primary}{\huge\textbf{M}ME. \textbf{JE-VEUX-PAS-DORMIR}}
+        \textcolor{primary}{\huge\ifmr{\textbf{M.}}{\textbf{M}ME.} \textbf{\uppercase{\mrms@name}}}
     };
     \node[text width=40pt, xshift=-56pt, yshift=0.375in](jeunesse) at (current page.south east){
         \fontsize{8pt}{8pt}\selectfont JEUNESSE
@@ -76,7 +84,7 @@
     \center
     \scriptsize\textbf{Mr. Men} and \textbf{Little Miss}\texttrademark \space \& \textcopyright 1984, The Hargreaves Organisation. Tous droits réservés.
     \break
-    \scriptsize\textit{Madame Je-Veux-Pas-Dormir} \textcopyright\space 2026 diroum JEUNESSE (une société de Twado). Peu de droits réservés.
+    \scriptsize\textit{\mrms@title\space\mrms@name} \textcopyright\space 2026 diroum JEUNESSE (une société de Twado). Peu de droits réservés.
     \newpage
     \raggedright\normalsize
 }
@@ -85,7 +93,7 @@
     %titre
     \center
     \null\vfill
-    \huge\textbf{Madame\\JE-VEUX-PAS-DORMIR\\}
+    \huge\textbf{\mrms@title\\\uppercase{\mrms@name}\\}
     \vspace{\baselineskip}
     \Large\textit{\textrm{dagothig}}\\
     \vfill
@@ -177,7 +185,7 @@
     \newpage
 }
 
-\title{Madame Je-Veux-Pas-Dormir}
+\title{\mrms@title\space\mrms@name}
 \author{Guillaume Noël-Martel}
 \date{\today}
 \raggedright
