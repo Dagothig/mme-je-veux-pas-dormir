@@ -1,0 +1,10 @@
+\documentclass[12pt,letterpaper]{book}
+\usepackage{pdfpages}
+\usepackage[]{geometry}
+\geometry{paperwidth=5in, paperheight=11in}
+\usepackage[cross,letter,center]{crop}
+\begin{document}
+\includepdf[
+pages={1-2,39-40}, nup=2x1, noautoscale, booklet, landscape,
+]{text.pdf}
+\end{document}
