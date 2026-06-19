@@ -16,8 +16,7 @@
 \usetikzlibrary{shapes.misc, positioning}
 \usepackage[
     paperwidth=5.625in, paperheight=5.25in,
-    hmargin=0.5in, vmargin=0.5in,
-    outer=0.625in, inner=0.5in
+    margin=0.5in, outer=0.625in
 ]{geometry}
 \usepackage{layout}
 \usepackage[dvipsnames]{xcolor}
@@ -38,7 +37,7 @@
 \newcommand{\coverpage}[1]{
     \large
     \begin{tikzpicture}[remember picture,overlay]
-    \node[xshift=0.125in, yshift=-0.25in](img) at (current page.center){\includegraphics[width=4.5in,height=4in]{#1}};
+    \node[xshift=0.125in, yshift=-0.25in](img) at (current page.center){\includegraphics[width=4.5in,height=4in,keepaspectratio]{#1}};
     \fill[primary] (current page.north west) -- +(0.3in, 0.0in) -- +(0.3in, -\paperheight) -- (current page.south west);
     \node[xshift=0.3in-5pt, yshift=0.25in, rotate=90, right] at (current page.south west){
         \textcolor{white}{\ifmr{\textbf{MONSIEUR} MADAME}{MONSIEUR \textbf{MADAME}}\hspace{1.575in}\textbf{DAGOTHIG}}
@@ -115,7 +114,10 @@
 }
 
 \newcommand{\txtpage}[1]{
-    \newgeometry{vmargin=0.0in}
+    \newgeometry{
+        hmargin=0.5in,
+        vmargin=0.0in,
+        outer=0.625in}
     \null\vfill
     \begin{minipage}{\textwidth}
         \setstretch{1.5}
