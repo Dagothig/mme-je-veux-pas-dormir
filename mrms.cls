@@ -31,6 +31,7 @@
 \setlength{\parskip}{0pt}
 \setstretch{1.0}
 \definecolor{primary}{rgb}{\mrms@r, \mrms@g, \mrms@b}
+\hyphenpenalty=10000
 
 \newcommand{\ifmr}[2]{\ifthenelse{\equal{\mrms@title}{Monsieur}}{#1}{#2}}
 

@@ -48,3 +48,8 @@ Titres parus (incluant dans le futur et dans l'hypothétique):
 * M. Médiocre - Ça prend la tirade, le reste c'est TBD.
 * M. Gaboué -
 * M. Lette - Pique-nique! Ninjas?
+
+Retrouve tous tes héros sur https://twado.neocities.org \
+Édité par diroum JEUNESSE, 2920, chemin de la tour, Montréal. \
+Pas de dépôt légal. \
+Définitivement hors la loi sur les publications destinées à la jeunesse.
