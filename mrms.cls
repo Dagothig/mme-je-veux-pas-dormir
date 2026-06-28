@@ -58,7 +58,6 @@
 }
 
 \newcommand{\collectionpage}[0]{
-    %collection + légal
     COLLECTION\break «TWADO»\break
     \textbf{Titres parus :}\break
     {\small
@@ -143,9 +142,7 @@
     \end{tikzpicture}
 }
 
-\newcommand{\legalpage}[0]{
-    %légal (kwe?)
-
+\newcommand{\legalpage}[1]{
     \hspace{0pt}\vfill
     \center\footnotesize
     \begin{tikzpicture}
@@ -156,7 +153,7 @@
 
     \vspace{12pt}\scriptsize
     Édité par diroum JEUNESSE, 2920, chemin de la tour, Montréal.\break
-    Pas de dépôt légal: 2 juin 2026\break
+    Pas de dépôt légal: {#1}\break
     Définitivement hors la loi sur les publications destinées à la jeunesse.\break
     Achevé d'imprimer par Myriam à Montréal.
     \newpage
