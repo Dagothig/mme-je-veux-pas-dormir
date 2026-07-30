@@ -5,40 +5,40 @@ Wow! Such livres!
 Titres parus (incluant dans le futur et dans l'hypothétique):
 
 *  [Madame JE-VEUX-PAS-DORMIR \
-    <img src="./img/mme-je-veux-pas-dormir.jpg" height="200" />](./mme-je-veux-pas-dormir)
+    <img src="./img/mme-je-veux-pas-dormir.jpg" height="200" />](./mme-je-veux-pas-dormir/text.pdf)
 
 *  [Madame GOBELIN - à venir \
-    <img src="./img/mme-gobelin.jpg" height="200" />](./mme-gobelin)
+    <img src="./img/mme-gobelin.jpg" height="200" />](./mme-gobelin/text.pdf)
 
 *  [Madame NATA - à venir \
-    <img src="./img/mme-nata.jpg" height="200" />](./mme-nata)
+    <img src="./img/mme-nata.jpg" height="200" />](./mme-nata/text.pdf)
 
 *  [Madame FIN-DE-PHRASE - à venir \
-    <img src="./img/mme-fin-de-phrase.jpg" height="200" />](./mme-fin-de-phrase)
+    <img src="./img/mme-fin-de-phrase.jpg" height="200" />](./mme-fin-de-phrase/text.pdf)
 
 *  [Monsieur LETTE - à venir \
-    <img src="./img/cossin.jpg" height="200" />](./cossin)
+    <img src="./img/cossin.jpg" height="200" />](./cossin/text.pdf)
 
 *  [Monsieur GABOUÉ - à venir \
-    <img src="./img/d-gaboue.jpg" height="200" />](./d-gaboue)
+    <img src="./img/d-gaboue.jpg" height="200" />](./d-gaboue/text.pdf)
 
 *  [Monsieur JE-SUIS-PAS-FATIGUÉ \
-    <img src="./img/m-je-suis-pas-fatigue.jpg" height="200" />](./m-je-suis-pas-fatigue)
+    <img src="./img/m-je-suis-pas-fatigue.jpg" height="200" />](./m-je-suis-pas-fatigue/text.pdf)
 
 *  [Monsieur BABA - à venir \
-    <img src="./img/m-baba.jpg" height="200" />](./m-baba)
+    <img src="./img/m-baba.jpg" height="200" />](./m-baba/text.pdf)
 
 *  [Monsieur ÇA-FAIT-LA-JOB - à venir \
-    <img src="./img/m-ca-fait-la-job.jpg" height="200" />](./m-ca-fait-la-job)
+    <img src="./img/m-ca-fait-la-job.jpg" height="200" />](./m-ca-fait-la-job/text.pdf)
 
 *  [Monsieur ARRÊTER-QUAND-JE-VEUX - à venir \
-    <img src="./img/m-arreter-quand-je-veux.jpg" height="200" />](./m-arreter-quand-je-veux)
+    <img src="./img/m-arreter-quand-je-veux.jpg" height="200" />](./m-arreter-quand-je-veux/text.pdf)
 
 *  [Monsieur TWADO - à venir \
-    <img src="./img/m-twado.jpg" height="200" />](./m-twado)
+    <img src="./img/m-twado.jpg" height="200" />](./m-twado/text.pdf)
 
 *  [Monsieur MÉDIOCRE - à venir \
-    <img src="./img/barnak.jpg" height="200" />](./barnak)
+    <img src="./img/barnak.jpg" height="200" />](./barnak/text.pdf)
 
 
 ## Idées:
@@ -46,6 +46,9 @@ Titres parus (incluant dans le futur et dans l'hypothétique):
     partout et il n'est pas du tout présent.
 * M. Twado - Lettres garbled, et images gravées apocalyptiques.
     On commence le conte avec l'histoire de l'arrivée de twado, c'est normal. C'est twado qui parle garbled
+
+    > on faisait les tests de gestion d'escape de backslash dans le cours de compil
+    > pis comme test case on s'est ramassé avec "\"twado" ou de quoi dans le genre
 * M. Médiocre - Ça prend la tirade, le reste c'est TBD.
 * M. Gaboué -
 * M. Lette - Pique-nique! Ninjas?
