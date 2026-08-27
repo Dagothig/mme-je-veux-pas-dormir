@@ -49,7 +49,13 @@ Titres parus (incluant dans le futur et dans l'hypothétique):
 
     > on faisait les tests de gestion d'escape de backslash dans le cours de compil
     > pis comme test case on s'est ramassé avec "\"twado" ou de quoi dans le genre
-* M. Médiocre - Ça prend la tirade, le reste c'est TBD.
+* M. Médiocre - Ça prend la tirade, le reste c'est TBD:
+    Barnak: C'est une bonne chose, tout compte fait.
+        Je vais te ridiculiser moi-même, tout en frappant l'aiguille durant l'eclispe.
+        AINSI, LORSQUE TON PEUPLE VERRA LA LUNE CACHER LE SOLEIL, DANS MON CIEL, IL SAURA QUE TOUT EST PERDU POUR L'ÉTERNITÉ!
+        MINABLE CHEVALIER!! BATS-TOI!!!
+    Hype: NON, BARNAK!!! C'EST À TOI DE TE BATTRE!!!
+        DIEU MÉDIOCRE!!! BATS-TOI!!!
 * M. Gaboué -
 * M. Lette - Pique-nique! Ninjas?
 
