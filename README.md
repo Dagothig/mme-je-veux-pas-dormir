@@ -37,7 +37,7 @@ Titres parus (incluant dans le futur et dans l'hypothétique):
 *  [Monsieur TWADO - à venir \
     <img src="./img/m-twado.jpg" height="200" />](./m-twado/text.pdf)
 
-*  [Monsieur MÉDIOCRE - à venir \
+*  [Monsieur MÉDIOCRE \
     <img src="./img/barnak.jpg" height="200" />](./barnak/text.pdf)
 
 
