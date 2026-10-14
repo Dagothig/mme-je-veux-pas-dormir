@@ -1,6 +1,9 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{mrms}[2026/06/14 Mr and little ms]
 
+\pdftrailerid{}
+\pdfinfoomitdate=1
+
 \RequirePackage{kvoptions}
 \SetupKeyvalOptions{family=mrms, prefix=mrms@}
 \DeclareStringOption[<TITLE>]{title}
