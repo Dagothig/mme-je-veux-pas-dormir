@@ -158,7 +158,7 @@
     Édité par diroum JEUNESSE, 2920, chemin de la tour, Montréal.\break
     Pas de dépôt légal: {#1}\break
     Définitivement hors la loi sur les publications destinées à la jeunesse.\break
-    Achevé d'imprimer par Myriam à Montréal.
+    Achevé d'imprimer par Longueuil Repro Plan.
     \newpage
     \normalsize
 }
