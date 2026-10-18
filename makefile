@@ -1,3 +1,7 @@
+notify = \
+	notify-send -a mrms-twado -i $(realpath ./img/$(1).jpg) $(1) "$(2)" || \
+	notify-send -a mrms-twado -i $(realpath ./img/$(1).jpg) $(1) "Error in $(2)"
+
 all: text book
 text: */text.pdf
 book: */cover.pdf */booklet.pdf
@@ -5,10 +9,10 @@ watch:
 	while true; do $(MAKE) -q || ($(MAKE)); sleep 0.5; done
 
 %/text.pdf: %/text.tex mrms.cls
-	@(cd $(@D); pdflatex text.tex && notify-send -i ./img/$(@D).jpg $(@D) "Generated text" || notify-send -i ./img/$(@D).jpg $(@D) "Could not generate text")
+	@(cd $(@D); pdflatex --interaction=batchmode text.tex && $(call notify,$(@D),"text"))
 
 %/cover.pdf: %/text.pdf mrmsbook.cls
-	@(cd $(@D); pdflatex cover.tex && notify-send -i ./img/$(@D).jpg $(@D) "Generated cover" || notify-send -i ./img/$(@D).jpg $(@D) "Could not generate cover")
+	@(cd $(@D); pdflatex --interaction=batchmode cover.tex && $(call notify,$(@D),"cover"))
 
 %/booklet.pdf: %/text.pdf mrmsbook.cls
-	@(cd $(@D); pdflatex booklet.tex && notify-send -i ./img/$(@D).jpg $(@D) "Generated booklet" || notify-send -i ./img/$(@D).jpg $(@D) "Could not generate booklet")
+	@(cd $(@D); pdflatex --interaction=batchmode booklet.tex && $(call notify,$(@D),"booklet"))
