@@ -2,4 +2,5 @@
 *.dvi
 *.log
 *.~lock.*
+*.bak
 adresses.ods
