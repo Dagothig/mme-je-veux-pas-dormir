@@ -10,9 +10,9 @@ Titres parus (incluant dans le futur et dans l'hypothétique):
     <body>
         <tr>
             <td rowspan="2">
-                <div style="width: 200px; height: 200px; background: white">
-                    <img src="./img/mme-je-veux-pas-dormir.jpg" height="200px" style="display: block; margin: auto" />
-                </div>
+                <p align="center">
+                    <img src="./img/mme-je-veux-pas-dormir.jpg" height="200px" />
+                </p>
             </td>
             <th>
                 <a href="./mme-je-veux-pas-dormir/text.pdf">
@@ -28,9 +28,9 @@ Titres parus (incluant dans le futur et dans l'hypothétique):
         </tr>
         <tr>
             <td rowspan="2">
-                <div style="width: 200px; height: 200px; background: white">
-                    <img src="./img/mme-gobelin.jpg" height="200px" style="display: block; margin: auto" />
-                </div>
+                <p align="center">
+                    <img src="./img/mme-gobelin.jpg" height="200px" />
+                </p>
             </td>
             <th>
                 <a href="./mme-gobelin/text.pdf">
@@ -45,9 +45,9 @@ Titres parus (incluant dans le futur et dans l'hypothétique):
         </tr>
         <tr>
             <td rowSpan="2">
-                <div style="width: 200px; height: 200px; background: white">
-                    <img src="./img/mme-nata.jpg" height="200px" style="display: block; margin: auto" />
-                </div>
+                <p align="center">
+                    <img src="./img/mme-nata.jpg" height="200px" />
+                </p>
             </td>
             <th>
                 <a href="./mme-nata/text.pdf">
@@ -62,9 +62,9 @@ Titres parus (incluant dans le futur et dans l'hypothétique):
         </tr>
         <tr>
             <td rowSpan="2">
-                <div style="width: 200px; height: 200px; background: white">
-                    <img src="./img/mme-fin-de-phrase.jpg" height="200px" style="display: block; margin: auto" />
-                </div>
+                <p align="center">
+                    <img src="./img/mme-fin-de-phrase.jpg" height="200px" />
+                </p>
             </td>
             <th>
                 <a href="./mme-fin-de-phrase/text.pdf">
@@ -79,9 +79,9 @@ Titres parus (incluant dans le futur et dans l'hypothétique):
         </tr>
         <tr>
             <td rowSpan="2">
-                <div style="width: 200px; height: 200px; background: white">
-                    <img src="./img/cossin.jpg" height="200px" style="display: block; margin: auto" />
-                </div>
+                <p align="center">
+                    <img src="./img/cossin.jpg" height="200px" />
+                </p>
             </td>
             <th>
                 <a href="./cossin/text.pdf">
@@ -99,9 +99,9 @@ Titres parus (incluant dans le futur et dans l'hypothétique):
         </tr>
         <tr>
             <td rowSpan="2">
-                <div style="width: 200px; height: 200px; background: white">
-                    <img src="./img/d-gaboue.jpg" height="200px" style="display: block; margin: auto" />
-                </div>
+                <p align="center">
+                    <img src="./img/d-gaboue.jpg" height="200px" />
+                </p>
             </td>
             <th>
                 <a href="./d-gaboue/text.pdf">
@@ -116,9 +116,9 @@ Titres parus (incluant dans le futur et dans l'hypothétique):
         </tr>
         <tr>
             <td rowSpan="2">
-                <div style="width: 200px; height: 200px; background: white">
-                    <img src="./img/m-je-suis-pas-fatigue.jpg" height="200px" style="display: block; margin: auto" />
-                </div>
+                <p align="center">
+                    <img src="./img/m-je-suis-pas-fatigue.jpg" height="200px" />
+                </p>
             </td>
             <th>
                 <a href="./m-je-suis-pas-fatigue/text.pdf">
@@ -135,9 +135,9 @@ Titres parus (incluant dans le futur et dans l'hypothétique):
         </tr>
         <tr>
             <td rowSpan="2">
-                <div style="width: 200px; height: 200px; background: white">
-                    <img src="./img/m-baba.jpg" height="200px" style="display: block; margin: auto" />
-                </div>
+                <p align="center">
+                    <img src="./img/m-baba.jpg" height="200px" />
+                </p>
             </td>
             <th>
                 <a href="./m-baba/text.pdf">
@@ -153,9 +153,9 @@ Titres parus (incluant dans le futur et dans l'hypothétique):
         </tr>
         <tr>
             <td rowSpan="2">
-                <div style="width: 200px; height: 200px; background: white">
-                    <img src="./img/m-ca-fait-la-job.jpg" height="200px" style="display: block; margin: auto" />
-                </div>
+                <p align="center">
+                    <img src="./img/m-ca-fait-la-job.jpg" height="200px" />
+                </p>
             </td>
             <th>
                 <a href="./m-ca-fait-la-job/text.pdf">
@@ -170,9 +170,9 @@ Titres parus (incluant dans le futur et dans l'hypothétique):
         </tr>
         <tr>
             <td rowSpan="2">
-                <div style="width: 200px; height: 200px; background: white">
-                    <img src="./img/m-arreter-quand-je-veux.jpg" height="200px" style="display: block; margin: auto" />
-                </div>
+                <p align="center">
+                    <img src="./img/m-arreter-quand-je-veux.jpg" height="200px" />
+                </p>
             </td>
             <th>
                 <a href="./m-arreter-quand-je-veux/text.pdf">
@@ -187,9 +187,9 @@ Titres parus (incluant dans le futur et dans l'hypothétique):
         </tr>
         <tr>
             <td rowSpan="2">
-                <div style="width: 200px; height: 200px; background: white">
-                    <img src="./img/m-twado.jpg" height="200px" style="display: block; margin: auto" />
-                </div>
+                <p align="center">
+                    <img src="./img/m-twado.jpg" height="200px" />
+                </p>
             </td>
             <th>
                 <a href="./m-twado/text.pdf">
@@ -204,9 +204,9 @@ Titres parus (incluant dans le futur et dans l'hypothétique):
         </tr>
         <tr>
             <td rowSpan="2">
-                <div style="width: 200px; height: 200px; background: white">
-                    <img src="./img/barnak.jpg" height="200px" style="display: block; margin: auto" />
-                </div>
+                <p align="center">
+                    <img src="./img/barnak.jpg" height="200px" />
+                </p>
             </td>
             <th>
                 <a href="./barnak/text.pdf">
