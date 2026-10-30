@@ -10,7 +10,7 @@ Titres parus (incluant dans le futur et dans l'hypothétique):
     <body>
         <tr>
             <td rowspan="2">
-                <img src="./img/mme-je-veux-pas-dormir.jpg" width="200" />
+                <img src="./img/mme-je-veux-pas-dormir.jpg" height="200" />
             </td>
             <th>
                 <a href="./mme-je-veux-pas-dormir/text.pdf">
@@ -26,7 +26,7 @@ Titres parus (incluant dans le futur et dans l'hypothétique):
         </tr>
         <tr>
             <td rowspan="2">
-                <img src="./img/mme-gobelin.jpg" width="200" />
+                <img src="./img/mme-gobelin.jpg" height="200" />
             </td>
             <th>
                 <a href="./mme-gobelin/text.pdf">
@@ -41,7 +41,7 @@ Titres parus (incluant dans le futur et dans l'hypothétique):
         </tr>
         <tr>
             <td rowSpan="2">
-                <img src="./img/mme-nata.jpg" width="200" />
+                <img src="./img/mme-nata.jpg" height="200" />
             </td>
             <th>
                 <a href="./mme-nata/text.pdf">
@@ -56,7 +56,7 @@ Titres parus (incluant dans le futur et dans l'hypothétique):
         </tr>
         <tr>
             <td rowSpan="2">
-                <img src="./img/mme-fin-de-phrase.jpg" width="200" />
+                <img src="./img/mme-fin-de-phrase.jpg" height="200" />
             </td>
             <th>
                 <a href="./mme-fin-de-phrase/text.pdf">
@@ -71,7 +71,7 @@ Titres parus (incluant dans le futur et dans l'hypothétique):
         </tr>
         <tr>
             <td rowSpan="2">
-                <img src="./img/cossin.jpg" width="200" />
+                <img src="./img/cossin.jpg" height="200" />
             </td>
             <th>
                 <a href="./cossin/text.pdf">
@@ -89,7 +89,7 @@ Titres parus (incluant dans le futur et dans l'hypothétique):
         </tr>
         <tr>
             <td rowSpan="2">
-                <img src="./img/d-gaboue.jpg" width="200" />
+                <img src="./img/d-gaboue.jpg" height="200" />
             </td>
             <th>
                 <a href="./d-gaboue/text.pdf">
@@ -104,7 +104,7 @@ Titres parus (incluant dans le futur et dans l'hypothétique):
         </tr>
         <tr>
             <td rowSpan="2">
-                <img src="./img/m-je-suis-pas-fatigue.jpg" width="200" />
+                <img src="./img/m-je-suis-pas-fatigue.jpg" height="200" />
             </td>
             <th>
                 <a href="./m-je-suis-pas-fatigue/text.pdf">
@@ -121,7 +121,7 @@ Titres parus (incluant dans le futur et dans l'hypothétique):
         </tr>
         <tr>
             <td rowSpan="2">
-                <img src="./img/m-baba.jpg" width="200" />
+                <img src="./img/m-baba.jpg" height="200" />
             </td>
             <th>
                 <a href="./m-baba/text.pdf">
@@ -137,11 +137,11 @@ Titres parus (incluant dans le futur et dans l'hypothétique):
         </tr>
         <tr>
             <td rowSpan="2">
-                <img src="./img/m-ca-fait-la-job.jpg" width="200" />
+                <img src="./img/m-ca-fait-la-job.jpg" height="200" />
             </td>
             <th>
                 <a href="./m-ca-fait-la-job/text.pdf">
-                    Monsieur ÇA-FAIT-LA-JOB - à venir
+                    Monsieur ÇA-FAIT-LA-JOB
                 </a>
             </th>
         </tr>
@@ -152,7 +152,7 @@ Titres parus (incluant dans le futur et dans l'hypothétique):
         </tr>
         <tr>
             <td rowSpan="2">
-                <img src="./img/m-arreter-quand-je-veux.jpg" width="200" />
+                <img src="./img/m-arreter-quand-je-veux.jpg" height="200" />
             </td>
             <th>
                 <a href="./m-arreter-quand-je-veux/text.pdf">
@@ -167,7 +167,7 @@ Titres parus (incluant dans le futur et dans l'hypothétique):
         </tr>
         <tr>
             <td rowSpan="2">
-                <img src="./img/m-twado.jpg" width="200" />
+                <img src="./img/m-twado.jpg" height="200" />
             </td>
             <th>
                 <a href="./m-twado/text.pdf">
@@ -182,7 +182,7 @@ Titres parus (incluant dans le futur et dans l'hypothétique):
         </tr>
         <tr>
             <td rowSpan="2">
-                <img src="./img/barnak.jpg" width="200" />
+                <img src="./img/barnak.jpg" height="200" />
             </td>
             <th>
                 <a href="./barnak/text.pdf">
