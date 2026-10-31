@@ -224,7 +224,7 @@ Titres parus (incluant dans le futur et dans l'hypothétique):
 </table>
 
 ## Idées:
-* M. Arrêter-Quand-Je-Veux fait une journée de travail bien normale, mais il trimballe sa console
+* M. Arrêter-Quand-Je-Veux faire une journée de travail bien normale, mais il trimballe sa console
     partout et il n'est pas du tout présent.
 * M. Twado - Lettres garbled, et images gravées apocalyptiques.
     On commence le conte avec l'histoire de l'arrivée de twado, c'est normal. C'est twado qui parle garbled
@@ -232,6 +232,28 @@ Titres parus (incluant dans le futur et dans l'hypothétique):
     > on faisait les tests de gestion d'escape de backslash dans le cours de compil
     > pis comme test case on s'est ramassé avec "\"twado" ou de quoi dans le genre
 * M. Gaboué -
+
+    > Monsieur Gaboué personnellement, je visualisais une aventure ou y parle à plein de gens, pis à chaque personne, y se tanne de lui parler et y'a une phrase clé qui revient du type
+"Et sur ces paroles, Monsieur Gaboué tendit la main vers \[Monsieur/Madame\], levit son doigt et fit demi-tour"
+Si c'est des Monsieurs/Madames qui sont spirituellement les diroum-kids, ça serait encore mieux
+Faudrait qu'il aille à un show, pis qu'y croise un Monsieur lourd
+
+    > C'est le Mossieur le plus Mossieur de tous les Mossieurs
+Gaboué a un aimant de ce Mossieur-là
+Il était assez important pour aller sur son mur de tole back in the days, pis sur son étagère en métal now in these days
+C'était un mossieur vraiment très lourd qu'on a rencontré en attendant un show qui était mémorable
+
+    À tous les coups, monsieur Gaboué aussi a besoin d'un mur de tôle
+
+    > C'est ça son objectif \
+        Il a un trou dans son mur \
+        Et il va voir Monsieur Ça-Fait-La-Job pour de l'aide \
+        Mais il se fait donner un mur de tole \
+        Pis là la phrase clé, y lui fait un finger pis y part avec le mur de tole sous le bras
+
+    > Y pourrait y avoir un subplot de Monsieur Baba et Monsieur Je-Suis-Pas-Fatigué qui viennent jouer chez lui et il est pas content
+Y pourrait avoir besoin d'aller se chercher un lunch au Pret-A-Manger
+
 
 Retrouve tous tes héros sur https://twado.neocities.org \
 Édité par diroum JEUNESSE, 2920, chemin de la tour, Montréal. \
