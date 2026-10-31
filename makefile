@@ -1,12 +1,23 @@
 notify = \
-	notify-send -a mrms-twado -i $(realpath ./img/$(1).jpg) $(1) "$(2)" || \
-	notify-send -a mrms-twado -i $(realpath ./img/$(1).jpg) $(1) "Error in $(2)"
+	notify-send -a $(1) -i $(realpath ./img/$(1).jpg) "$(2)" || \
+	notify-send -a $(1) -i $(realpath ./img/$(1).jpg) "Error in $(2)"
+
+texts = $(subst .tex,.pdf, $(wildcard */text.tex))
+covers = $(subst .tex,.pdf, $(wildcard */cover.tex))
+booklets = $(subst .tex,.pdf, $(wildcard */booklet.tex))
 
 all: text book
-text: */text.pdf
-book: */cover.pdf */booklet.pdf
+text: $(texts)
+book: $(covers) $(booklets)
+
 watch:
-	while true; do $(MAKE) -q || ($(MAKE)); sleep 0.5; done
+	@while true; do $(MAKE) -q || ($(MAKE)); sleep 0.5; done
+
+watch-text:
+	@while true; do $(MAKE) text -q || ($(MAKE) text); sleep 0.5; done
+
+clean:
+	@rm */*.pdf
 
 %/text.pdf: %/text.tex mrms.cls
 	@(cd $(@D); pdflatex --interaction=batchmode text.tex && $(call notify,$(@D),"text"))
