@@ -80,7 +80,7 @@ Titres parus (incluant dans le futur et dans l'hypothétique):
         <tr>
             <td rowSpan="2">
                 <p align="center">
-                    <img src="./img/cossin.jpg" height="200px" />
+                    <img src="./img/m-lette.jpg" height="200px" />
                 </p>
             </td>
             <th>
@@ -100,7 +100,7 @@ Titres parus (incluant dans le futur et dans l'hypothétique):
         <tr>
             <td rowSpan="2">
                 <p align="center">
-                    <img src="./img/d-gaboue.jpg" height="200px" />
+                    <img src="./img/m-gaboue.jpg" height="200px" />
                 </p>
             </td>
             <th>
@@ -205,7 +205,7 @@ Titres parus (incluant dans le futur et dans l'hypothétique):
         <tr>
             <td rowSpan="2">
                 <p align="center">
-                    <img src="./img/barnak.jpg" height="200px" />
+                    <img src="./img/m-mediocre.jpg" height="200px" />
                 </p>
             </td>
             <th>

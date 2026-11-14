@@ -173,14 +173,14 @@
             \mrms{Madame}{GOBELIN}{../img/mme-gobelin.jpg} &
             \mrms{Madame}{NATA}{../img/mme-nata.jpg} &
             \mrms{Madame}{FIN-DE-PHRASE}{../img/mme-fin-de-phrase.jpg} \\
-            \mrms{Monsieur}{LETTE}{../img/cossin.jpg} &
-            \mrms{Monsieur}{GABOUÉ}{../img/d-gaboue.jpg} &
+            \mrms{Monsieur}{LETTE}{../img/m-lette.jpg} &
+            \mrms{Monsieur}{GABOUÉ}{../img/m-gaboue.jpg} &
             \mrms{Monsieur}{JE-SUIS-PAS-FATIGUÉ}{../img/m-je-suis-pas-fatigue.jpg} &
             \mrms{Monsieur}{BABA}{../img/m-baba.jpg} \\
             \mrms{Monsieur}{ÇA-FAIT-LA-JOB}{../img/m-ca-fait-la-job.jpg} &
             \mrms{Monsieur}{ARRÊTER-QUAND-JE-VEUX}{../img/m-arreter-quand-je-veux.jpg} &
             \mrms{Monsieur}{TWADO}{../img/m-twado.jpg} &
-            \mrms{Monsieur}{MÉDIOCRE}{../img/barnak.jpg}
+            \mrms{Monsieur}{MÉDIOCRE}{../img/m-mediocre.jpg}
         \end{tabular}
     };
     \node[above of=gowee, yshift=1.5in](title){\textbf{COLLECTION «TWADO»}};
