@@ -84,7 +84,7 @@ Titres parus (incluant dans le futur et dans l'hypothétique):
                 </p>
             </td>
             <th>
-                <a href="./cossin/text.pdf">
+                <a href="./m-lette/text.pdf">
                     Monsieur LETTE
                 </a>
             </th>
@@ -104,7 +104,7 @@ Titres parus (incluant dans le futur et dans l'hypothétique):
                 </p>
             </td>
             <th>
-                <a href="./d-gaboue/text.pdf">
+                <a href="./m-gaboue/text.pdf">
                     Monsieur GABOUÉ
                 </a>
             </th>
@@ -209,7 +209,7 @@ Titres parus (incluant dans le futur et dans l'hypothétique):
                 </p>
             </td>
             <th>
-                <a href="./barnak/text.pdf">
+                <a href="./m-mediocre/text.pdf">
                     Monsieur MÉDIOCRE
                 </a>
             </th>
